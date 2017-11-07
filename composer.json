@@ -1,17 +1,26 @@
 {
-    "name": "htl3r/kung-fu-movies",
-    "description": "Provides an interface to set what a kung-fu-movie has to provide",
+    "name": "skupa/kungfusite",
+    "description": "desc",
     "type": "library",
+    "license": "gnu",
     "authors": [
         {
-            "name": "Florian Weiss",
-            "email": "github@weissheiten.at"
+            "name": "Pascal Skupa",
+            "email": "pascal.skupa@htl.rennweg.at"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "HTL3R\\KungFuMovies\\": "src/"
-        }
-    },
-    "require": {}
-}
+    "require": {
+          "htl3r/kung-fu-movies": "dev-master",
+          "endroid/qrcode": "dev-master"
+      },
+      "repositories": {
+          "kungfu": {
+              "type": "vcs",
+              "url": "https://github.com/Weissheiten/htl3r.kungfumovies.git"
+          },
+          "qrcode": {
+              "type": "vcs",
+              "url": "https://github.com/endroid/QrCode.git"
+          }
+      }
+  }
